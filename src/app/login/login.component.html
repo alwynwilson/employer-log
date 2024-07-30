@@ -1,0 +1,25 @@
+<div style="height: 88vh;margin-left:200px;" class="d-flex align-items-center justify-content-center w-75">
+    <div class="shadow bg-light row rounded p-5 align-items-center">
+        <!-- <div class="col-lg-6">
+        </div> -->
+        <div class="col-lg-12">
+            <form (ngSubmit)="login()" #loginForm="ngForm" class="rounded p-5 border">
+                <img src="https://touchworldtechnology.com/wp-content/uploads/2023/03/logo2.png" alt="" class="img-fluid mb-4">
+                <div class="form-floating mb-3">
+                    <input #useremail="ngModel" name="email" [(ngModel)]="email" type="text" class="form-control" id="floatingInput" placeholder="name" required>
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div *ngIf="useremail.invalid && useremail.touched" class="text-danger fw-bolder mb-3">*Invalid username</div>
+                <div class="form-floating mb-3">
+                    <input #userpswd="ngModel" name="password" [(ngModel)]="password" type="password" class="form-control" id="floatingPassword" placeholder="Password" pattern="[a-zA-Z0-9]*" required>
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <div *ngIf="userpswd.invalid && userpswd.touched" class="text-danger fw-bolder mb-3">*Invalid Password</div>
+
+                <div class="d-grid">
+                    <button [disabled]="loginForm.invalid" routerLink="/emppage" type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="container-fluid d-flex align-items-center justify-content-center">
+        <div class="row container-fluid d-flex align-items-center justify-content-center">
+            <div class="col">
+                <div class="d-flex justify-content-between mt-5">
+                    <h1 class="fw-bolder">All Users List</h1>
+                    <button mat-raised-button color="primary" (click)="openDialog()" class="btn btn-primary"><i class="fa-solid fa-user-plus me-1"></i>New User</button>
+                </div>
+                <div class="mt-5">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Emp Name</th>
+                                <th>Conatct No:</th>
+                                <th>Email</th>
+                                <th>Address</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr >
+                                <td>1</td>
+                                <td>Arun</td>
+                                <td>9684916565</td>
+                                <td>arungmail.com</td>
+                                <td>Kootakal house</td>
+                            </tr>
+                            <tr *ngIf="" class="fw-bolder text-danger">User not found !!</tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
